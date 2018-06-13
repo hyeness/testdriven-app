@@ -1,6 +1,6 @@
-all:up
+all: up
 
-up: clean
+up:
 	@echo run docker-compose.
 	docker-compose -f docker-compose-dev.yml up -d --no-deps --build
 	sleep 1
